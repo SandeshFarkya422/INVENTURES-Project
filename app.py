@@ -9,7 +9,7 @@ notes = []
 def home():
     return render_template('addnote.html')
 
-@app.route('/add_note', methods=['POST'])
+@app.route('/addnote', methods=['POST'])
 def add_note():
     title = request.form.get('title')
     content = request.form.get('content')
